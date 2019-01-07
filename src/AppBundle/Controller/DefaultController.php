@@ -18,7 +18,14 @@ class DefaultController extends Controller
 
         $a = 123;
 
-        return $this->render('default/index.html.twig', ['a' => $a]);
+        $someArray =  [1,2,3];
+        $someValue = false;
+
+        return $this->render('default/index.html.twig', [
+            'a' => $a,
+            'some_array' => $someArray,
+            'some_value' => $someValue
+        ]);
     }
 
     /**
