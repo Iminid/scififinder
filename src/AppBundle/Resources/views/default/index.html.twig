@@ -1,7 +1,625 @@
 {% extends '@App/layout.html.twig' %}
 
-{% block body %}
-    Hello world !!!
+{% block title %}
+    <title>Sci-Fi Finder</title>
+{% endblock %}
+
+{% block content %}
+    <!-- Feature News Section -->
+
+    <section id="category_section" class="category_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="category_section news">
+                        <div class="article_title header_purple">
+                            <h2><a href="news.html" target="_self">NEWS</a></h2>
+                        </div>
+                        <!----article_title------>
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="top_article_img">
+                                        <a href="item_news.html" target="_self"><img class="img-responsive" src="assets/img/the_axpanse3.jpg" alt="feature-top">
+                                        </a>
+                                    </div>
+                                    <!----top_article_img------>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="news.html"><span class="tag purple">News</span></a>
+
+                                    <div class="category_article_title">
+                                        <h2><a href="item_news.html" target="_self">Les fans peuvent lâcher un ouf de soulagement : il y aura bien une nouvelle saison de The Expanse.</a></h2>
+                                    </div>
+                                    <!----category_article_title------>
+                                    <div class="category_article_date"><a href="#">23 Oct - 2018</a>, par: <a href="#">Admin</a></div>
+                                    <!----category_article_date------>
+                                    <div class="category_article_content">
+                                        « The Expanse est sauvée » : il n’a fallu que quatre mots à Jeff Bezos, CEO d’Amazon, pour provoquer les hourras de la foule à l’occasion de l’International Space Development Conference. En somme, la série The Expanse, qui n’a pas été renouvelée pour une quatrième saison par la chaîne SyFy, va pouvoir redécoller sur la plateforme vidéo accessible dans le cadre d’un abonnement Amazon Prime.Le géant américain a non seulement récupéré les droits de diffusion mais aussi promis d’autres épisodes inédits. Les fans, particulièrement attristés par la décision de SyFy, peuvent être soulagés : leur lobbying a fonctionné.
+                                    </div>
+                                    <!----category_article_content------>
+                                    <div class="media_social">
+                                        <span><a href="#"><i class="fa fa-share-alt"></i>424 </a>Partages</span>
+                                        <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                    </div>
+
+
+
+                                    <!----media_social------>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="item_news.html"><img class="media-object" src="assets/img/cat-mobi-sm1.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="news.html"><span class="tag purple">News</span></a>
+
+                                            <h3 class="media-heading"><a href="item_news.html" target="_self">Apple launches photo-centric
+                                                    wrist watch for Android</a></h3>
+                                            <span class="media-date"><a href="#">23 Oct - 2018</a>, par: <a href="#">Admin</a></span>
+
+                                            <div class="media_social">
+                                                <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Partages</span>
+                                                <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Commentaires</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="item_news.html"><img class="media-object" src="assets/img/cat-mobi-sm3.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="news.html"><span class="tag purple">News</span></a>
+
+                                            <h3 class="media-heading"><a href="item_news.html" target="_self">The Portable Charger or data
+                                                    cable</a></h3>
+                                            <span class="media-date"><a href="#">23 Oct - 2018</a>, par: <a href="#">Admin</a></span>
+
+                                            <div class="media_social">
+                                                <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Partages</span>
+                                                <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Commentaires</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="item_news.html"><img class="media-object" src="assets/img/cat-mobi-sm2.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="news.html"><span class="tag purple">News</span></a>
+
+                                            <h3 class="media-heading"><a href="item_news.html" target="_self">Iphone 6 launches white & Grey
+                                                    colors handset</a></h3>
+                                            <span class="media-date"><a href="#">23 Oct - 2018</a>, par: <a href="#">Admin</a></span>
+
+                                            <div class="media_social">
+                                                <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Partages</span>
+                                                <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Commentaires</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="item_news.html"><img class="media-object" src="assets/img/cat-mobi-sm4.jpg" alt="Generic placeholder image"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="news.html"><span class="tag purple">News</span></a>
+
+                                            <h3 class="media-heading"><a href="item_news.html" target="_self">Fully new look slim handset
+                                                    like</a></h3>
+                                            <span class="media-date"><a href="#">23 Oct - 2018</a>, par: <a href="#">Admin</a></span>
+
+                                            <div class="media_social">
+                                                <span><a href="#"><i class="fa fa-share-alt"></i>424</a> Partages</span>
+                                                <span><a href="#"><i class="fa fa-comments-o"></i>4</a> Commentaires</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="divider"><a href="news.html">Encore plus de news&nbsp;&raquo;</a></p>
+                    </div>
+                    <!-- Films -->
+
+                    <div class="category_section films">
+                        <div class="article_title header_pink">
+                            <h2><a href="films.html" target="_self">FILMS</a></h2>
+                        </div>
+                        <!--  Section -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self"><img class="img-responsive" src="assets/img/star_wars.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag pink"><a href="films.html" target="_self">FILMS</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">La Guerre des étoiles </a></h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!----article_date------>
+                                        <!-- article_date -->
+
+                                        <div class="category_article_content">
+                                            Il y a bien longtemps, dans une galaxie très lointaine... La guerre civile fait rage entre l'Empire galactique et l'Alliance rebelle. Capturée par les troupes de choc de l'Empereur menées par le sombre et impitoyable Dark Vador, la princesse Leia Organa dissimule les plans de l’Étoile Noire, une station spatiale invulnérable, à son droïde R2-D2 avec pour mission de les remettre au Jedi Obi-Wan Kenobi. Accompagné de son fidèle compagnon, le droïde de protocole C-3PO, R2-D2 s'échoue sur la planète Tatooine et termine sa quête chez le jeune Luke Skywalker. Rêvant de devenir pilote mais confiné aux travaux de la ferme, ce dernier se lance à la recherche de ce mystérieux Obi-Wan Kenobi, devenu ermite au cœur des montagnes désertiques de Tatooine...
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                                <div class="col-md-4">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self">
+                                                <img class="img-responsive" src="assets/img/rencontres.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag pink"><a href="films.html" target="_self">FILMS</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">Rencontres du troisième type </a>
+                                            </h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!----article_date------>
+                                        <!-- article_date -->
+
+                                        <div class="category_article_content">
+                                            Des faits étranges se produisent un peu partout dans le monde : des avions qui avaient disparu durant la Seconde Guerre mondiale sont retrouvés au Mexique en parfait état de marche, un cargo est découvert échoué au beau milieu du désert de Gobi. Dans l'Indiana, pendant qu'une coupure d'électricité paralyse la banlieue, Roy Neary, un réparateur de câbles, voit une "soucoupe volante" passer au-dessus de sa voiture. D'autres personnes sont également témoins de ce type de phénomène : Barry Guiler, un petit garçon de quatre ans, est réveillé par le bruit de ses jouets qui se mettent en route. Cherchant à savoir d'où proviennent ces ovnis, Roy Neary se heurte aux rigoureuses consignes de silence imposées par le gouvernement fédéral. Obsédé par ce qu'il a vu et hanté par une image de montagne qu'il essaie désespérément de reconstituer, il est abandonné par sa femme Ronnie et ses enfants. Il n'y a que Jillian, la mère de Barry, qui le comprenne.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self">
+                                                <img class="img-responsive" src="assets/img/planet_of_the_apes.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag pink"><a href="films.html" target="_self">FILMS</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">Le Secret de la Planète des Singes </a>
+                                            </h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!----article_date------>
+                                        <!-- article_date -->
+
+                                        <div class="category_article_content">
+                                            L'astronaute Brent est envoyé au secours de Taylor, mais s'écrase à son tour sur la "planète des singes". Cherchant à retrouver son compagnon avec l'aide de Nova, il suit sa trace jusque dans la "zone interdite" où il découvre une société de mutants humains télépathes.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                            </div>
+                            <!-- row -->
+
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <p class="divider"><a href="films.html">Encore plus de films&nbsp;&raquo;</a></p>
+                    </div>
+
+                    <!-- Séries -->
+
+
+                    <div class="category_section series">
+                        <div class="article_title header_blue">
+                            <h2><a href="series.html" target="_self">SERIES</a></h2>
+                        </div>
+                        <!-- row -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self">
+                                                <img class="img-responsive" src="assets/img/startrek2.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag blue"><a href="series.html" target="_self">SERIES</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">Star Trek </a></h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!----category_article_date------>
+                                        <!-- category_article_date -->
+
+                                        <div class="category_article_content">
+                                            Cette série raconte les aventures vécues, au XXIIIe siècle, par James T. Kirk, capitaine du vaisseau Enterprise NCC-1701 et son équipage. Leur mission quinquennale est d'explorer la galaxie afin d'y découvrir d'autres formes de vie et d'enrichir ainsi les connaissances humaines.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self">
+                                                <img class="img-responsive" src="assets/img/the_expanse2.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag blue"><a href="series.html" target="_self">SERIES</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">The Expanse </a></h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!----category_article_date------>
+                                        <!-- category_article_date -->
+
+                                        <div class="category_article_content">
+                                            Au 23ème siècle, les hommes ont colonisé le système solaire. Les Nations-Unies contrôlent la Terre. Mars est devenue une puissance militaire indépendante et les autres planètes dépendent des ressources de la ceinture d'astéroïdes, où les conditions de vie sont pénibles et les habitants contraints de travailler durement. Au fil des ans, les tensions entre la Terre, Mars et la Ceinture ont pris une telle ampleur qu'une simple étincelle pourrait déclencher une guerre. Dans ce contexte tendu, la disparition d'une jeune femme pousse un détective endurci et le capitaine d'un vaisseau à traverser le système solaire pour révéler la plus grande conspiration de l'Histoire de l'humanité.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                            </div>
+                            <!-- row -->
+
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self">
+                                                <img class="img-responsive" src="assets/img/battlestar_galactica2.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag blue"><a href="series.html" target="_self">SERIES</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">Battlestar Galactica </a></h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!----category_article_date------>
+                                        <!-- category_article_date -->
+
+                                        <div class="category_article_content">
+                                            Les cylons, robots humanoïdes créés par les humains et devenus ennemis jurés de ceux-ci, ont complètement disparu de l'univers connu depuis la signature d'une trêve il y a une quarantaine d'années. Grâce à ce répit, les humains ont reconstruit leurs mondes (les douze Colonies de Kobol), créant de nouveaux vaisseaux et vivant désormais dans une certaine insouciance du passé. Le vieux Battlestar Galactica qui a rendu de fiers services lors de la première guerre contre les Cylons est sur le point d'être démilitarisé et transformé en musée.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- col-md-6 -->
+
+                                <div class="col-md-6">
+                                    <div class="category_article_body">
+                                        <div class="top_article_img">
+                                            <a href="item.html" target="_self">
+                                                <img class="img-responsive" src="assets/img/firefly2.jpg" alt="feature-top">
+                                            </a>
+                                        </div>
+                                        <!-- top_article_img -->
+
+                                        <span class="tag blue"><a href="series.html" target="_self">SERIES</a></span>
+
+                                        <div class="category_article_title">
+                                            <h2><a href="item.html" target="_self">Firefly</a></h2>
+                                        </div>
+                                        <!-- category_article_title -->
+
+                                        <!--<div class="category_article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+        <!-- category_article_date -->
+
+                                        <div class="category_article_content">
+                                            Après une guerre civile qui a permis à l'Union des Planètes de dominer l'espace, le capitaine Malcolm Reynolds et son équipage s'efforcent de survivre à bord du vaisseau Serenity en effectuant diverses missions (transport de marchandises ou une mission de sauvetage...) sans trop se soucier de la légalité.
+                                        </div>
+                                        <!-- category_article_content -->
+
+                                        <div class="media_social">
+                                            <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                            <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                        </div>
+                                        <!-- media_social -->
+
+                                    </div>
+                                    <!-- category_article_body -->
+
+                                </div>
+                                <!-- top_article_img -->
+
+                            </div>
+                            <!-- top_article_img -->
+
+                        </div>
+                        <!-- top_article_img -->
+
+                        <p class="divider"><a href="series.html">Encore plus de séries&nbsp;&raquo;</a></p>
+                    </div>
+                    <!--Livres-->
+
+                    <div class="category_section livres">
+                        <div class="article_title header_orange">
+                            <h2><a href="books.html" target="_self">LIVRES</a></h2>
+                        </div>
+                        <!-- article_title -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="top_article_img">
+                                        <a href="item.html" target="_self">
+                                            <img class="img-responsive middle" src="assets/img/la-planete-des-singes.jpg" alt="feature-top">
+                                        </a>
+                                    </div>
+                                    <!-- top_article_img -->
+
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="tag orange"><a href="books.html" target="_self">LIVRES</a></span>
+
+                                    <div class="category_article_title">
+                                        <h2><a href="item.html" target="_self">La Planète des singes </a></h2>
+                                    </div>
+                                    <!-- category_article_title -->
+
+                                    <!--<div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+    <!----article_date------>
+                                    <!-- category_article_wrapper -->
+
+                                    <div class="category_article_content">
+                                        Y’a-t-il des êtres humains ailleurs que dans notre galaxie ? C'est la question que se posent le professeur Antelle, Arthur Levain, son second, et le journaliste Ulysse Mérou, lorsque; de leur vaisseau spatial , ils observent le paysage d'une planète proche de Bételgeuse: on y aperçoit des villes, les routes curieusement semblables à celles de notre Terre. Après s'y être posés, les trois hommes découvrent que la planète est habitée par des singes. Ceux-ci s'emparent d'Ulysse Mérou et se livrent sur lui à des expé-riences. Il faudra que le journaliste fasse, devant les singes, la preuve de son humanité…
+                                    </div>
+                                    <!-- category_article_content -->
+
+                                    <div class="media_social">
+                                        <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                        <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                    </div>
+                                    <!-- media_social -->
+
+                                </div>
+                                <!-- col-md-7 -->
+
+                            </div>
+                            <!-- row -->
+
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="top_article_img">
+                                        <a href="item.html" target="_self">
+                                            <img class="img-responsive middle" src="assets/img/la-guerre-des-mondes.jpg" alt="feature-top">
+                                        </a>
+                                    </div>
+                                    <!-- top_article_img -->
+
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="tag orange"><a href="books.html" target="_self">LIVRES</a></span>
+
+                                    <div class="category_article_title">
+                                        <h2><a href="item.html" target="_self">La Guerre des mondes </a></h2>
+                                    </div>
+                                    <!-- category_article_title -->
+
+                                    <!--<div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+    <!----article_date------>
+                                    <!-- article_date -->
+
+                                    <div class="category_article_content">
+                                        Un jour de 1894, un météore s'abat près de Londres, bientôt suivi de nombreux autres. Des cratères calcinés qu'ils ont creusés dans le sol émergent alors d'énormes tripodes de métal, terrifiants engins de guerre venus de Mars pour envahir la Terre ! Face à leur rayon mortel, les armes terrestres s'avèrent dérisoires et les survivants ne peuvent que fuir à travers les ruines fumantes des villes et les campagnes ravagées pour tenter d'échapper à une mort qui semble inéluctable...
+                                    </div>
+                                    <!-- category_article_content -->
+
+                                    <div class="media_social">
+                                        <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                                        <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                                    </div>
+                                    <!-- media_social -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <div class="category_article_wrapper">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="top_article_img">
+                                        <a href="item.html" target="_self">
+                                            <img class="img-responsive middle" src="assets/img/1984.jpg" alt="feature-top">
+                                        </a>
+                                    </div>
+                                    <!-- media_social -->
+
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="tag orange"><a href="books.html" target="_self">LIVRES</a></span>
+
+                                    <div class="category_article_title">
+                                        <h2><a href="item.html" target="_self">1984</a></h2>
+                                    </div>
+                                    <!-- category_article_title -->
+
+                                    <!--<div class="article_date"><a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a></div>
+    <!----article_date------>
+                                    <!-- article_date -->
+
+                                    <div class="category_article_content">
+                                        "De tous les carrefours importants, le visage à la moustache noire vous fixait du regard. Il y en avait un sur le mur d'en face. BIG BROTHER VOUS REGARDE, répétait la légende, tandis que le regard des yeux noirs pénétrait les yeux de Winston... Au loin, un hélicoptère glissa entre les toits, plana un moment, telle une mouche bleue, puis repartir comme un flèche, dans un vol courbe. C'était une patrouille qui venait mettre le feu aux fenêtres des gens. Mais les patrouilles n'avaient pas d'importance. Seule comptait la Police de la Pensée."
+                                    </div>
+                                    <!-- category_article_content -->
+
+                                    <div class="media_social">
+                                                    <span>
+                                                        <a href="#">
+                                                            <i class="fa fa-share-alt"></i>424
+                                                        </a> Partages
+                                                    </span>
+                                        <span>
+                                                        <a href="#">
+                                                            <i class="fa fa-comments-o"></i>4
+                                                        </a> Commentaires
+                                                    </span>
+                                    </div>
+                                    <!-- media_social -->
+
+                                </div>
+                                <!-- col-md-7 -->
+
+                            </div>
+                            <!-- row -->
+
+                        </div>
+                        <!-- category_article_wrapper -->
+
+                        <p class="divider"><a href="books.html">Encore plus de livres&nbsp;&raquo;</a></p>
+                    </div>
+                    <!-- Camera News Section -->
+
+                    <!-- Design News Section -->
+                </div>
+                <!-- Left Section -->
+
+                <!--<div class="col-md-4">
+
+<!-- Popular News -->
+
+
+                <!-- Advertisement -->
+
+
+                <!-- Advertisement -->
+
+                <!-- Reviews News -->
+
+
+                <!-- Advertisement -->
+
+
+                <!-- Most Commented News -->
+
+                <!-- Editor News -->
+
+
+                <!--Advertisement -->
+
+
+                <!--  Readers Corner News -->
+
+
+                <!--Advertisement-->
+                <!--</div>
+<!-- Right Section -->
+
+            </div>
+            <!-- Row -->
+
+        </div>
+        <!-- Container -->
+
+    </section>
+    <!-- Category News Section -->
 
 
 {% endblock %}
