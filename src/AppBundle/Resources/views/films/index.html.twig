@@ -1,0 +1,18 @@
+{% extends '@App/layout.html.twig' %}
+
+{% block title %}
+     <title>Sci-Fi Finder</title>
+{% endblock %}
+
+{% block content %}
+
+
+     {% for film_id in films  %}
+          <a href="{{ path('film_item', {id: film_id }) }}"> Films {{ film_id  }}</a><br>
+     {% endfor %}
+
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}

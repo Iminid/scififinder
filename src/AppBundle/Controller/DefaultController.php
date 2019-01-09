@@ -29,11 +29,6 @@ class DefaultController extends Controller
         return $this->render('@App/default/feedback.html.twig');
     }
 
-    /**
-     * @Route("/films", name="films")
-     */
 
-    public function filmsAction(){
-        return $this->render('@App/default/films.html.twig');
-    }
+
 }

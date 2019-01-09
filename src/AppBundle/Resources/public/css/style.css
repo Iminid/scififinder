@@ -51,14 +51,14 @@ body {
 }
 
 .header_back {
-    background-image: url('../../assets/img/header_back.jpg');
+    background-image: url('../img/header_back.jpg');
     background-color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .footer_back {
-    background-image: url('../../assets/img/footer_back.jpg');
+    background-image: url('../img/footer_back.jpg');
     background-color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
