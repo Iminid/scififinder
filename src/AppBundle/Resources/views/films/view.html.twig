@@ -1,11 +1,202 @@
 {% extends '@App/layout.html.twig' %}
 
 {% block title %}
-    <title>Film</title>
+    <title>{{ film.titleFi }}</title>
 {% endblock %}
 
 {% block content %}
-    <h1>Film {{ id }}</h1>
+    {#<h1>{{ film.titleFi }}</h1>#}
+
+    <section id="entity_section" class="entity_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="entity_wrapper">
+                        <div class="entity_title">
+                            <h1><a href="{{ path('film_item', { id: film.id} ) }}">{{ film.titleFi }}</a></h1>
+                        </div>
+                        <!-- entity_title -->
+
+                        <!--<div class="entity_meta"><a href="#" target="_self">10Aug- 2015</a>, by: <a href="#" target="_self">Eric joan</a>
+</div>
+<!-- entity_meta -->
+
+                        <div class="entity_rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                        <!-- entity_rating -->
+
+                        <div class="entity_social">
+                            <a href="#" class="icons-sm sh-ic">
+                                <i class="fa fa-share-alt"></i>
+                                <b>424</b> <span class="share_ic">Shares</span>
+                            </a>
+                            <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+                            <!--Facebook-->
+                            <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+                            <!--Twitter-->
+                            <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
+                            <!--RSS-->
+                        </div>
+                        <!-- entity_social -->
+
+                        <div class="entity_thumb">
+                            <img class="img-responsive middle" src="assets/img/battlestar_galactica3.jpg" alt="feature-top">
+                        </div>
+                        <!-- entity_thumb -->
+
+                        <div class="entity_content">
+                            <p class="text_title">
+                                {{ film.descFi }}
+                            </p>
+
+
+                            <div class="item_desc">Réalisateur(s) :</div>
+                            <p class="real">Edward James Olmos, Michael Rymer, Rod Hardy, Brad Turner, Marita Grabiak, Jeff Woolnough, Sergio Mimica-Gezzan, Robert W. Young, Jonas Pate, Allan Kroeker</p>
+                            <div class="item_desc">Producteur(s) :</div>
+                            <p class="prod">Ronald D. Moore, Glen A. Larson, David Eick, Michael Rymer</p>
+                            <div class="item_desc">Acteurs :</div>
+                            <p class="actor">Katee Sackhoff, Edward James Olmos, Mary McDonnell, Jamie Bamber, Tricia Helfer, James Callis, Grace Park, Aaron Douglas...</p>
+                            <div class="item_desc">Année :</div>
+                            <p class="year">2004</p>
+                            <div class="item_desc">Pays d'origine :</div>
+                            <p class="countr">Royaume-Uni, Canada, Etats-Unis</p>
+
+
+                        </div>
+                        <!-- entity_content -->
+
+                        <div class="entity_footer">
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-angle-double-left"></i></button>
+
+                            <div class="entity_social">
+                                <span><i class="fa fa-share-alt"></i>424 <a href="#">Partages</a> </span>
+                                <span><i class="fa fa-comments-o"></i>4 <a href="#">Commentaires</a> </span>
+                            </div>
+                            <!-- entity_social -->
+
+                        </div>
+                        <!-- entity_footer -->
+
+                    </div>
+                    <!-- entity_wrapper -->
+
+
+
+                    <div class="readers_comment">
+                        <div class="entity_inner__title header_purple">
+                            <h2>Commentaires</h2>
+                        </div>
+                        <!-- entity_title -->
+
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img alt="64x64" class="media-object" data-src="assets/img/reader_img1.jpg" src="assets/img/reader_img1.jpg" data-holder-rendered="true">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="media-heading"><a href="#">Josh Ryan</a></h2>
+                                But who has any right to find fault with a man who chooses to enjoy a pleasure that has
+                                no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+
+                                <div class="entity_vote">
+                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a>
+                                    <a href="#"><span class="reply_ic">Répondre </span></a>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img alt="64x64" class="media-object" data-src="assets/img/reader_img2.jpg" src="assets/img/reader_img2.jpg" data-holder-rendered="true">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h2 class="media-heading"><a href="#">Admin</a></h2>
+                                        But who has any right to find fault with a man who chooses to enjoy a pleasure
+                                        that has no annoying consequences, or one who avoids a pain that produces no
+                                        resultant pleasure?
+
+                                        <div class="entity_vote">
+                                            <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                                            <a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a>
+                                            <a href="#"><span class="reply_ic">Répondre </span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- media end -->
+
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img alt="64x64" class="media-object" data-src="assets/img/reader_img3.jpg" src="assets/img/reader_img3.jpg" data-holder-rendered="true">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="media-heading"><a href="#">Philip Joshep</a></h2>
+                                But who has any right to find fault with a man who chooses to enjoy a pleasure that has
+                                no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+
+                                <div class="entity_vote">
+                                    <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a>
+                                    <a href="#"><span class="reply_ic">Répondre </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media end -->
+                    </div>
+                    <!--Readers Comment-->
+
+
+                    <div class="entity_comments">
+                        <!--<div class="entity_inner__title header_black">
+<h2>Poster un commentaire</h2>
+</div>-->
+                        <h2>Poster un commentaire</h2>
+                        <!--Entity Title -->
+
+                        <div class="entity_comment_from">
+                            <form>
+                                <div class="form-group comment">
+                                    <textarea class="form-control" id="inputComment" placeholder="Comment"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-submit red">Envoyer</button>
+                            </form>
+                        </div>
+                        <!--Entity Comments From -->
+                        <!--LOGIN AND REGISTRY -->
+
+                        <a class="connec" href="admin/registr.html">
+                            <p>Pas encore enregistré ?</p>
+                        </a>
+                        <a class="connec" href="admin/login.html">
+                            <p>Se connecter</p>
+                        </a>
+
+                    </div>
+                    <!--Entity Comments -->
+
+                </div>
+                <!--Left Section-->
+
+
+            </div>
+            <!-- row -->
+
+        </div>
+        <!-- container -->
+
+    </section>
+    <!-- Entity Section Wrapper -->
 
 
 

@@ -1,15 +1,59 @@
 {% extends '@App/layout.html.twig' %}
 
 {% block title %}
-     <title>Sci-Fi Finder</title>
+     <title>Films</title>
 {% endblock %}
 
 {% block content %}
 
 
-     {% for film_id in films  %}
+<div class="container">
+     <div class="row">
+          <div class="col-md-12">
+
+               {% for film in films  %}
+
+               <div class="col-md-4">
+                    <div class="category_article_body">
+                         <div class="top_article_img">
+                              <a href="{{ path('film_item', { id: film.id} ) }}"><img class="img-fluid" src="assets/img/star_wars.jpg" alt="feature-top"></a>
+                         </div>
+                         <!-- top_article_img -->
+
+                         <div class="category_article_title">
+                              <h5><a href="{{ path('film_item', { id: film.id} ) }}">{{ film.titleFi }} </a></h5>
+                         </div>
+                         <!-- category_article_title -->
+
+                         <!--<div class="article_date">
+ <a href="#">10Aug- 2015</a>, by: <a href="#">Eric joan</a>
+</div>
+<!-- article_date -->
+
+                         <div class="category_article_content">
+                              {{ film.descFi }}
+                         </div>
+                         <!-- category_article_content -->
+
+                         <div class="article_social">
+                              <span><a href="#"><i class="fa fa-share-alt"></i>424 </a> Partages</span>
+                              <span><i class="fa fa-comments-o"></i><a href="#">4</a> Commentaires</span>
+                         </div>
+                         <!-- article_social -->
+
+                    </div>
+               </div>
+
+               {% endfor %}
+
+          </div>
+     </div>
+</div>
+
+
+{#{% for film_id in films  %}
           <a href="{{ path('film_item', {id: film_id }) }}"> Films {{ film_id  }}</a><br>
-     {% endfor %}
+     {% endfor %}#}
 
 {% endblock %}
 
