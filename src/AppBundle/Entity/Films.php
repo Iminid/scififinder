@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * films
+ * Films
  *
  * @ORM\Table(name="films")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\filmsRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\FilmsRepository")
  */
-class films
+class Films
 {
     /**
      * @var int
@@ -31,37 +31,23 @@ class films
     /**
      * @var string
      *
-     * @ORM\Column(name="desc_fi", type="string", length=1500)
+     * @ORM\Column(name="desc_fi", type="text")
      */
     private $descFi;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="year_fi", type="datetime")
+     * @ORM\Column(name="date_fi", type="datetime")
      */
-    private $yearFi;
+    private $dateFi;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="image_fi", type="string", length=255)
+     * @ORM\Column(name="image_fi", type="string", length=100)
      */
     private $imageFi;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="prod", type="string", length=255, nullable=true)
-     */
-    private $prod;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="person", type="string", length=255, nullable=true)
-     */
-    private $person;
 
 
     /**
@@ -79,7 +65,7 @@ class films
      *
      * @param string $titleFi
      *
-     * @return films
+     * @return Films
      */
     public function setTitleFi($titleFi)
     {
@@ -103,7 +89,7 @@ class films
      *
      * @param string $descFi
      *
-     * @return films
+     * @return Films
      */
     public function setDescFi($descFi)
     {
@@ -123,27 +109,27 @@ class films
     }
 
     /**
-     * Set yearFi
+     * Set dateFi
      *
-     * @param \DateTime $yearFi
+     * @param \DateTime $dateFi
      *
-     * @return films
+     * @return Films
      */
-    public function setYearFi($yearFi)
+    public function setDateFi($dateFi)
     {
-        $this->yearFi = $yearFi;
+        $this->dateFi = $dateFi;
 
         return $this;
     }
 
     /**
-     * Get yearFi
+     * Get dateFi
      *
      * @return \DateTime
      */
-    public function getYearFi()
+    public function getDateFi()
     {
-        return $this->yearFi;
+        return $this->dateFi;
     }
 
     /**
@@ -151,7 +137,7 @@ class films
      *
      * @param string $imageFi
      *
-     * @return films
+     * @return Films
      */
     public function setImageFi($imageFi)
     {
@@ -168,54 +154,6 @@ class films
     public function getImageFi()
     {
         return $this->imageFi;
-    }
-
-    /**
-     * Set prod
-     *
-     * @param string $prod
-     *
-     * @return films
-     */
-    public function setProd($prod)
-    {
-        $this->prod = $prod;
-
-        return $this;
-    }
-
-    /**
-     * Get prod
-     *
-     * @return string
-     */
-    public function getProd()
-    {
-        return $this->prod;
-    }
-
-    /**
-     * Set person
-     *
-     * @param string $person
-     *
-     * @return films
-     */
-    public function setPerson($person)
-    {
-        $this->person = $person;
-
-        return $this;
-    }
-
-    /**
-     * Get person
-     *
-     * @return string
-     */
-    public function getPerson()
-    {
-        return $this->person;
     }
 }
 

@@ -532,7 +532,7 @@ section {
     background: transparent;
     border-radius: 0;
     font-family: 'venus_risingregular';
-    font-size: 14px;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 768px) {

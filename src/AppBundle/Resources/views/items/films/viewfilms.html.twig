@@ -1,7 +1,7 @@
 {% extends '@App/layout.html.twig' %}
 
 {% block title %}
-    <title>{{ film.titleFi }}</title>
+    <title>{{ films.titleFi }}</title>
 {% endblock %}
 
 {% block content %}
@@ -13,7 +13,7 @@
                 <div class="col-md-12">
                     <div class="entity_wrapper">
                         <div class="entity_title">
-                            <h1><a href="{{ path('film_item', { id: film.id} ) }}">{{ film.titleFi }}</a></h1>
+                            <h1><a href="{{ path('films_item', { id: films.id} ) }}">{{ films.titleFi }}</a></h1>
                         </div>
                         <!-- entity_title -->
 
@@ -51,7 +51,7 @@
 
                         <div class="entity_content">
                             <p class="text_title">
-                                {{ film.descFi }}
+                                {{ films.descFi }}
                             </p>
 
 
@@ -62,7 +62,7 @@
                             <div class="item_desc">Acteurs :</div>
                             <p class="actor">Katee Sackhoff, Edward James Olmos, Mary McDonnell, Jamie Bamber, Tricia Helfer, James Callis, Grace Park, Aaron Douglas...</p>
                             <div class="item_desc">Année :</div>
-                            <p class="year">2004</p>
+                            <p class="year">{{ films.dateFi|date('Y') }}</p>
                             <div class="item_desc">Pays d'origine :</div>
                             <p class="countr">Royaume-Uni, Canada, Etats-Unis</p>
 

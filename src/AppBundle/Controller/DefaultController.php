@@ -20,14 +20,6 @@ class DefaultController extends Controller
         return $this->render('@App/default/index.html.twig');
     }
 
-    /**
-     * @Route("/feedback", name="feedback")
-     */
-
-    public function feedbackAction(){
-
-        return $this->render('@App/default/feedback.html.twig');
-    }
 
     /**
      * @Route("/contact", name="contact")

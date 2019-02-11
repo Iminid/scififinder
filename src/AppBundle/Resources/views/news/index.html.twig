@@ -1,0 +1,98 @@
+{% extends '@App/layout.html.twig' %}
+{% block title %}<title>News</title>{% endblock %}
+{% block content %}
+{#<h1>News list</h1>
+    {% for news in news %}
+     <a href="{{ path('news_item', {id: news.id}) }}">News {{ news.id }}: {{ news.title }}</a><br>
+    {% endfor %}#}
+
+    <section id="entity_section" class="entity_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    {% for news in news  %}
+
+                    <div class="entity_wrapper">
+                        <div class="entity_title">
+                            <h1><a href="{{ path('news_item', {id: news.id}) }}" target="_self">{{ news.title }}</a>
+                            </h1>
+                        </div>
+                        <!-- entity_title -->
+
+                        <div class="entity_meta">
+                            <a href="#">{{ news.date|date('d-m-Y')  }}</a>, par: <a href="#">Admin</a>
+                        </div>
+                        <!-- entity_meta -->
+
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                        </div>
+                        <!-- rating -->
+
+                        <div class="entity_social">
+                            <a href="#" class="icons-sm sh-ic"><i class="fa fa-share-alt"></i><b>424</b>
+                                <span class="share_ic">Partages</span>
+                            </a>
+                            <a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"></i></a>
+                            <!--Facebook-->
+                            <a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a>
+                            <!--Twitter-->
+                            <a href="#" class="icons-sm rss-ic"><i class="fa fa-rss"> </i></a>
+                            <!--RSS-->
+                            <span class="arrow">&raquo;</span>
+                        </div>
+                        <!-- entity_social -->
+
+                        <div class="entity_thumb">
+                            <img class="img-responsive middle" src="assets/img/the_axpanse3.jpg" alt="feature-top">
+                        </div>
+                        <!-- entity_thumb -->
+
+                        <div class="entity_content">
+                            <p>{{ news.description }}</p>
+                        </div>
+                        <!-- entity_content -->
+
+                    </div>
+                    <!-- entity_wrapper -->
+
+                    {% endfor %}
+
+
+                    <nav aria-label="Page navigation" class="pagination_section">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next" class="active"> <span aria-hidden="true">&raquo;</span> </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- navigation -->
+                </div>
+                <!-- col-md-12 -->
+
+
+            </div>
+            <!-- row -->
+
+        </div>
+        <!-- container -->
+
+    </section>
+    <!-- entity_section -->
+
+{% endblock %}
+
+{% block stylesheets %}{% endblock %}
