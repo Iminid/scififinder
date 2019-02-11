@@ -4,6 +4,7 @@
 namespace AppBundle\Controller;
 
 
+use AppBundle\Entity\Films;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -23,6 +24,8 @@ class ItemsController extends Controller
 
     /**
      * @Route("/films/{id}", name="films_item", requirements={"id":"[0-9]+"})
+     * @param Films $films
+     * @return array
      */
     public function viewfilmsAction($id){
 

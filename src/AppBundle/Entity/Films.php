@@ -51,6 +51,13 @@ class Films
 
 
     /**
+     * @var string
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\Country")
+     */
+    private $countFi;
+
+
+    /**
      * Get id
      *
      * @return int
@@ -59,6 +66,28 @@ class Films
     {
         return $this->id;
     }
+
+    /**
+     * Get country
+     *
+     * @return Country
+     */
+    public function getCountFi()
+    {
+        return $this->countFi;
+    }
+
+    /**
+     * @param string $countFi
+     * @return Films
+     */
+    public function setCountFi($countFi)
+    {
+        $this->countFi = $countFi;
+        return $this;
+    }
+
+
 
     /**
      * Set titleFi
