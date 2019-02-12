@@ -2021,3 +2021,13 @@ _______________________________________________*/
 .middle {
     margin: auto;
 }
+
+.alert-success{
+    text-align: center;
+    font-size: 25px;
+}
+.env{
+    padding: 10%;
+}
+
+

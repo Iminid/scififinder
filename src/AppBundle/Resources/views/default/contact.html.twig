@@ -6,7 +6,45 @@
 
 
 {% block content %}
-    Contact page
+
+
+
+
+    <div class="container contact-form">
+        {{ form_start(contact_form, {'attr': {'novalidate': 'novalidate'}}) }}
+        <div class="contact-image">
+            <img src="{{ asset('bundles/app/img/rocket_contact.png') }}" alt="rocket_contact" />
+        </div>
+        <div class="env">
+            <h3>Envoyez-nous un message :</h3>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                        {{ form_widget(contact_form.firstname, {'attr':{'class':'form-control', 'placeholder': 'Votre Prénom *'}}) }}
+                        {{ form_errors(contact_form.firstname) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_widget(contact_form.lastname, {'attr':{'class':'form-control', 'placeholder': 'Votre Nom *'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_widget(contact_form.email, {'attr':{'class':'form-control', 'placeholder': 'Votre E-mail *'}}) }}
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        {{ form_widget(contact_form.message, {'attr':{'class':'form-control', 'placeholder': 'Votre Message *',
+                        'style': 'width: 100%', 'style': 'height: 150px'}}) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_widget(contact_form.submit, {'attr':{'class':'btnContact'}}) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ form_end(contact_form) }}
+    </div>
+
 {% endblock %}
 
 
